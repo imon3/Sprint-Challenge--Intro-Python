@@ -50,14 +50,14 @@ print("Starts between C and G, inclusive:")
 c = []
 for human in humans:
     if human.name[0] is 'C' or human.name[0] is 'D' or human.name[0] is 'E' or human.name[0] is 'F' or human.name[0] is 'G':
-        c.append(human)
+        c.append(human.name)
 print(c)
 
 # Write a list comprehension that creates a list of all the ages plus 10.
 print("Ages plus 10:")
 d = []
 for human in humans:
-    d.append(f'{human.name} {human.age+10}')
+    d.append(human.age+10)
 print(d)
 
 # Write a list comprehension that creates a list of strings which are the name
@@ -75,7 +75,7 @@ print("Names and ages between 27 and 32:")
 f = []
 for human in humans:
     if human.age >= 27 and human.age <= 32:
-        f.append(human)
+        f.append((human.name, human.age))
 print(f)
 
 # Write a list comprehension that creates a list of new Humans like the old
@@ -84,13 +84,14 @@ print(f)
 print("All names uppercase:")
 g = []
 for human in humans:
-    g.append(f'{human.name.upper()}, {human.age+5}')
+    g.append(human)
 print(g)
 
 # Write a list comprehension that contains the square root of all the ages.
 print("Square root of ages:")
 h = []
 for human in humans:
-    human.age = human.age ** 2
-    h.append(human)
+    print(human.age)
+    h.append(math.sqrt(human.age))
+
 print(h)
