@@ -17,3 +17,20 @@
 #     pass
 #
 # Put a comment noting which class is the base class
+# BASE CLASS
+
+
+class Vehicle:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+
+
+class FlightVehicle(Vehicle):
+    def __init__(self, make, model):
+        super().__init__(make, model)
+
+
+class Starship(FlightVehicle):
+    def __init__(self, make, model):
+        super().__init__(make, model)
