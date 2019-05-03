@@ -21,36 +21,35 @@
 
 # BASE CLASS
 class Vehicle:
-    def __init__(self, make, model):
-        self.make = make
-        self.model = model
+    def __init__(self):
+        self.self = self
 
 
 class FlightVehicle(Vehicle):
-    def __init__(self, make, model):
-        super().__init__(make, model)
+    def __init__(self):
+        super().__init__()
 
 
 class Starship(FlightVehicle):
-    def __init__(self, make, model):
-        super().__init__(make, model)
+    def __init__(self):
+        super().__init__()
 
 
 class Airplane(FlightVehicle):
-    def __init__(self, make, model):
-        super().__init__(make, model)
+    def __init__(self):
+        super().__init__()
 
 
 class GroundVehicle(Vehicle):
-    def __init__(self, make, model):
-        super().__init__(make, model)
+    def __init__(self):
+        super().__init__()
 
 
 class Car(GroundVehicle):
-    def __init__(self, make, model):
-        super().__init__(make, model)
+    def __init__(self):
+        super().__init__()
 
 
 class Motorcycle(GroundVehicle):
-    def __init__(self, make, model):
-        super().__init__(make, model)
+    def __init__(self):
+        super().__init__()
